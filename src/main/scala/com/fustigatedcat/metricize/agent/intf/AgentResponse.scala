@@ -4,10 +4,10 @@ trait AgentResponse {
 
 }
 
-case class AgentResponseSuccess(time : Long, response : String) extends AgentResponse {
+case class AgentResponseSuccess(queryTime : Long, time : Long, response : String) extends AgentResponse {
 
 }
 
-case class AgentResponseFailure(time : Long, failure : String) extends AgentResponse {
+case class AgentResponseFailure(queryTime : Long, time : Long, failure : String) extends AgentResponse {
 
 }
